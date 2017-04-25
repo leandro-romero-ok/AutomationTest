@@ -4,7 +4,7 @@ function searchInMercadoLibre(client, query){
     client
         .page.HomePage()
         .assert.elementPresent('@mlPage')
-        .seachInMercadoLibre(client)
+        .seachProduct(client, query)
     client
         .page.SearchPage()
         .assert.elementPresent(selector)

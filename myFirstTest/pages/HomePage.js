@@ -1,7 +1,7 @@
 var demoCommands = {
-    seachInMercadoLibre: function(client) {
+    seachProduct: function(client, query) {
         return this .waitForElementPresent('@textBoxSearch', timeout)
-                    .setValue('@textBoxSearch','Iphone 7 Plus')
+                    .setValue('@textBoxSearch',query)
                     .sendKeys('@textBoxSearch',client.Keys.ENTER);
     }
 };
