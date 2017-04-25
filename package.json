@@ -1,0 +1,30 @@
+{
+  "name": "myFirstProyect",
+  "version": "1.0.0",
+  "description": "My First project",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && selenium-standalone install",
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandroromero/trainings-nightwatchJS.git"
+  },
+  "keywords": [
+    "e2e",
+    "testing"
+  ],
+  "author": "Testing Automation Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leandroromero/trainings-nightwatchJS/issues"
+  },
+  "homepage": "https://github.com/leandroromero/trainings-nightwatchJS",
+  "dependencies": {
+    "selenium-standalone": "5.8.0",
+    "nightwatch": "0.9.8",
+    "minimist": "^1.2.0",
+    "nwjs-reporter": "0.0.7"
+  }
+}

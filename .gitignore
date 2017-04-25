@@ -1,0 +1,8 @@
+node_modules
+reports
+coverage
+*.iml
+idea/*
+.DS_Store
+*.log
+selenium-debug.log
