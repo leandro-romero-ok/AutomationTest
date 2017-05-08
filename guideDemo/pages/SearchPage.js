@@ -40,7 +40,7 @@ module.exports = {
             selector: '.article:nth-of-type(1)'
         },
         itemTitle: {
-            selector: '.list-view-item-title'
+            selector: '.list-view-item-title:nth-of-type(1)'
         },
         itemPrice: {
             selector: '.ch-price:nth-of-type(1)'

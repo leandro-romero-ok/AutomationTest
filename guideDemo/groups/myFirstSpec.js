@@ -1,4 +1,6 @@
-function searchTvLedDesktop(client, query, itemTitle, itemPrice){
+function searchTvLedDesktop(client, query){
+    var itemTitleSearch;
+    var itemPriceSearch;
     client
         .page.HomePage()
         .assert.elementPresent('@mlPage')
@@ -8,14 +10,22 @@ function searchTvLedDesktop(client, query, itemTitle, itemPrice){
         .chooseCategory4K()
         .assert.containsText('@filters','TV 4K')    
         .clickColumnView()
+    client.getText(client.page.SearchPage().elements.itemTitle.selector, function(result){itemTitleSearch = result.value});
+    client.getText(client.page.SearchPage().elements.itemPrice.selector, function(result){itemPriceSearch = result.value});
+    client
+        .page.SearchPage()
         .assert.urlContains('DisplayType_G')
-        .assert.containsText('@itemTitle', itemTitle)
-        .assert.containsText('@itemPrice', itemPrice)
         .clickFirstElementList();
     client
         .page.VipPage()
-        .assert.containsText('@itemTitle', itemTitle)
-        .assert.containsText('@itemPrice', itemPrice);
+    client.getText(client.page.VipPage().elements.itemTitle.selector, function(result){
+        console.log('Valor de la VIP: ' + result.value)
+            this.assert.equal(result.value,itemTitleSearch);
+         }),
+    client.getText(client.page.VipPage().elements.itemPrice.selector, function(result){
+            console.log('Valor de la VIP: ' + result.value)
+            this.assert.equal(result.value,itemPriceSearch);
+         });
 }
 
 module.exports = {
@@ -36,7 +46,7 @@ module.exports = {
 
     'Should search in mercadolibre a Tv led hd and verify product name, price chosed in search page': function (client) {
 
-        searchTvLedDesktop(client, "Tv led hd", 'Smart Tv Led Samsung Ju6000 40 4k Ultra Hd ( Netflix)', '$ 10.999')
+        searchTvLedDesktop(client, "Tv led hd")
 
     }
 };
