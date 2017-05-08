@@ -19,11 +19,9 @@ function searchTvLedDesktop(client, query){
     client
         .page.VipPage()
     client.getText(client.page.VipPage().elements.itemTitle.selector, function(result){
-        console.log('Valor de la VIP: ' + result.value)
             this.assert.equal(result.value,itemTitleSearch);
          }),
     client.getText(client.page.VipPage().elements.itemPrice.selector, function(result){
-            console.log('Valor de la VIP: ' + result.value)
             this.assert.equal(result.value,itemPriceSearch);
          });
 }
