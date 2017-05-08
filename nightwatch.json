@@ -1,5 +1,5 @@
 {
-  "src_folders": ["./myFirstTest/"],
+  "src_folders": ["./myFirstTest/groups"],
   "output_folder": "./reports/e2e",
   "globals_path": "./myFirstTest/globals.js",
   "page_objects_path": "./myFirstTest/pages",
