@@ -37,13 +37,13 @@ module.exports = {
             selector: '[href="http://televisores.mercadolibre.com.ar/televisores/tv-4k/tv-led-hd_DisplayType_G"]'
         },
         firstProduct: {
-            selector: '.article'
+            selector: '.article:nth-of-type(1)'
         },
         itemTitle: {
             selector: '.list-view-item-title'
         },
         itemPrice: {
-            selector: '.ch-price'
+            selector: '.ch-price:nth-of-type(1)'
         }
     }
 };
