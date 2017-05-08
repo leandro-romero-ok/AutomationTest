@@ -1,4 +1,4 @@
-function searchTvLedDesktop(client, query){
+function searchTvLedDesktop(client, query, itemTitle, itemPrice){
     client
         .page.HomePage()
         .assert.elementPresent('@mlPage')
@@ -9,13 +9,13 @@ function searchTvLedDesktop(client, query){
         .assert.containsText('@filters','TV 4K')    
         .clickColumnView()
         .assert.urlContains('DisplayType_G')
-        .assert.containsText('@itemTitle', 'Smart Tv Led Samsung Ju6000 40 4k Ultra Hd ( Netflix)')
-        .assert.containsText('@itemPrice', '$ 10.999')
+        .assert.containsText('@itemTitle', itemTitle)
+        .assert.containsText('@itemPrice', itemPrice)
         .clickFirstElementList();
     client
         .page.VipPage()
-        .assert.containsText('@itemTitle', 'Smart Tv Led Samsung Ju6000 40 4k Ultra Hd ( Netflix)')
-        .assert.containsText('@itemPrice', '$ 10.999');
+        .assert.containsText('@itemTitle', itemTitle)
+        .assert.containsText('@itemPrice', itemPrice);
 }
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
 
     'Should search in mercadolibre a Tv led hd and verify product name, price chosed in search page': function (client) {
 
-        searchTvLedDesktop(client, "Tv led hd")
+        searchTvLedDesktop(client, "Tv led hd", 'Smart Tv Led Samsung Ju6000 40 4k Ultra Hd ( Netflix)', '$ 10.999')
 
     }
 };

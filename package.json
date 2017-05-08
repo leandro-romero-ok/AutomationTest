@@ -23,7 +23,7 @@
   "homepage": "https://github.com/leandroromero/trainings-nightwatchJS",
   "dependencies": {
     "selenium-standalone": "5.8.0",
-    "nightwatch": "0.9.8",
+    "nightwatch": "0.9.12",
     "minimist": "^1.2.0",
     "nwjs-reporter": "0.0.7"
   }
