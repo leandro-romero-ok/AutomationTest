@@ -6,11 +6,6 @@ module.exports = {
     commands: [demoCommands],
 
     elements: {
-        itemTitle: {
-            selector: '.vip-title-main'
-        },
-        itemPrice: {
-            selector: '.ch-price'
-        }
+        
     }
 };
