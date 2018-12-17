@@ -17,6 +17,6 @@ npm run setup
 
 ```
 
-##Ejemplos
+##Correr los test automatizados
 
 npm run test -- -e xvfb_desktop
