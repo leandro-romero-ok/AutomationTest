@@ -1,5 +1,7 @@
 {
+
   "src_folders": ["./guideDemo/groups"],
+
   "output_folder": "./reports/e2e",
   "globals_path": "./guideDemo/globals.js",
   "page_objects_path": "./guideDemo/pages",

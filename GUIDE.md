@@ -9,7 +9,7 @@ Node.js: 6.9.1
 
 Dependencias de npm:
   * [selenium-standalone](https://www.npmjs.com/package/selenium-standalone): 5.8.0
-  * [nightwatch](https://www.npmjs.com/package/nightwatch): 0.9.11
+  * [nightwatch](https://www.npmjs.com/package/nightwatch): 0.9.12
 
 ##¿Hay una demo?
 
