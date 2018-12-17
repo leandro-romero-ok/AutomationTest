@@ -1,8 +1,10 @@
 {
-  "src_folders": ["./myFirstTest/groups"],
+
+  "src_folders": ["./guideDemo/groups"],
+
   "output_folder": "./reports/e2e",
-  "globals_path": "./myFirstTest/globals.js",
-  "page_objects_path": "./myFirstTest/pages",
+  "globals_path": "./guideDemo/globals.js",
+  "page_objects_path": "./guideDemo/pages",
   "test_workers": {
     "enabled": false,
     "workers": "auto"

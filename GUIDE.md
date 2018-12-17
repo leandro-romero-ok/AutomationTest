@@ -27,7 +27,7 @@ Para correr la suite de ejemplo deben correr el comando:
 
 Web mobile y dektop
 ```
-npm run test -- --tag demo -e xvfb_mobile && npm run test -- --tag demo -e xvfb_desktop
+npm run test -- --tag guideDemo -e xvfb_mobile && npm run test -- --tag guideDemo -e xvfb_desktop
 
 ```
 Si todo resultó bien deberias ver algo asi... :)
