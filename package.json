@@ -1,7 +1,7 @@
 {
-  "name": "myFirstProyect",
+  "name": "myDemoProyect",
   "version": "1.0.0",
-  "description": "My First project",
+  "description": "My Demo project",
   "main": "index.js",
   "scripts": {
     "setup": "npm install && selenium-standalone install",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leandroromero/trainings-nightwatchJS.git"
+    "url": "https://github.com/leandro-romero-ok/StensulTest.git"
   },
   "keywords": [
     "e2e",
@@ -18,13 +18,16 @@
   "author": "Testing Automation Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leandroromero/trainings-nightwatchJS/issues"
+    "url": "https://github.com/leandro-romero-ok/StensulTest/issues"
   },
-  "homepage": "https://github.com/leandroromero/trainings-nightwatchJS",
+  "homepage": "https://github.com/leandro-romero-ok/StensulTest",
   "dependencies": {
-    "selenium-standalone": "5.8.0",
-    "nightwatch": "0.9.12",
+    "selenium-standalone": "6.15.4",
+    "nightwatch": "0.9.21",
     "minimist": "^1.2.0",
     "nwjs-reporter": "0.0.7"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.45.0"
   }
 }

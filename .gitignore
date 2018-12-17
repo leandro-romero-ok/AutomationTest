@@ -6,3 +6,4 @@ idea/*
 .DS_Store
 *.log
 selenium-debug.log
+node_modules/*

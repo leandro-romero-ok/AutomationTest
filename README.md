@@ -23,4 +23,4 @@
   * Fácilmente integrable con un servidor de integración continua como Jenkins.
   * Facilidad para extender la librería de asserts y de commands.
 
-##Guía de instalacion y ejecucion (https://github.com/leandroromero/trainings-nightwatchJS/blob/master/GUIDE.md)
+##Guía de instalacion y ejecucion (https://github.com/leandro-romero-ok/StensulTest/blob/master/GUIDE.md)
