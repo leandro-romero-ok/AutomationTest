@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leandro-romero-ok/StensulTest.git"
+    "url": "https://github.com/leandro-romero-ok/AutomationTest.git"
   },
   "keywords": [
     "e2e",
@@ -18,9 +18,9 @@
   "author": "Testing Automation Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leandro-romero-ok/StensulTest/issues"
+    "url": "https://github.com/leandro-romero-ok/AutomationTest/issues"
   },
-  "homepage": "https://github.com/leandro-romero-ok/StensulTest",
+  "homepage": "https://github.com/leandro-romero-ok/AutomationTest",
   "dependencies": {
     "selenium-standalone": "6.15.4",
     "nightwatch": "0.9.21",
