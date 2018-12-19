@@ -1,22 +1,22 @@
 module.exports = {
 
     'Update description': function (client) {
-        var stensul = client.page.DemoPage();
+        var pageDemo = client.page.DemoPage();
     
-        stensul.navigate()
+        pageDemo.navigate()
           .assert.title('Stranger List')
           .waitForElementPresent('@editButton')
           .click('@editButton')
           .waitForElementPresent('@textAreaEdit')
-          .setValue('@textAreaEdit','TestStensul')
+          .setValue('@textAreaEdit','TestAutomation')
           .click('@updateButton')
-          .assert.containsText('@textDescription', 'TestStensul')
+          .assert.containsText('@textDescription', 'TestAutomation')
         client.end();
       },
     'View Code on Github': function (client) {
-        var stensul = client.page.DemoPage();
+        var pageDemo = client.page.DemoPage();
     
-        stensul.navigate()
+        pageDemo.navigate()
           .assert.title('Stranger List')
           .waitForElementPresent('@githubLink')
           .click('@githubLink')
@@ -24,9 +24,9 @@ module.exports = {
         client.end();
       },
       'Delete item intention': function (client) {
-        var stensul = client.page.DemoPage();
+        var pageDemo = client.page.DemoPage();
     
-        stensul.navigate()
+        pageDemo.navigate()
           .assert.title('Stranger List')
           .waitForElementPresent('@deleteItem')
           .click('@deleteItem')
